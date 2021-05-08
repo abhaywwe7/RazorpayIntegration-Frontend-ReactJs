@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product{
+    border: 3px solid #04AA6D;
+    margin: 18px;
+    padding: 20px;
+}
+.btn{
+    position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 6px;
+  width: 170px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn::after{
+    content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.btn:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
